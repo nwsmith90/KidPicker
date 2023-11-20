@@ -8,27 +8,44 @@ function addLogan() {
                 console.log(`${includedKids}`)
         }
         else if(isLoganChecked.checked == false){
-                const index = includedKids.indexOf("logan")
-                includedKids = includedKids.splice(index, 0)
+                includedKids = includedKids.filter(e => e !== 'logan')
                 console.log(`${includedKids}`)
         }
 }
 
 function addPatrick() {
-        if(document.getElementById("patrickCheck")){
+        let isPatrickChecked = document.getElementById("patrickCheck")
+        if(isPatrickChecked.checked == true){
                 includedKids.push("patrick")
+                console.log(`${includedKids}`)
+        }
+        else if(isPatrickChecked.checked == false){
+                includedKids = includedKids.filter(e => e !== 'patrick')
+                console.log(`${includedKids}`)
         }
 }
 
 function addLillian() {
-        if(document.getElementById("lillianCheck")){
+        let isLillianChecked = document.getElementById("lillianCheck")
+        if(isLillianChecked.checked == true){
                 includedKids.push("lillian")
+                console.log(`${includedKids}`)
+        }
+        else if(isLillianChecked.checked == false){
+                includedKids = includedKids.filter(e => e !== 'lillian')
+                console.log(`${includedKids}`)
         }
 }
 
 function addSamuel() {
-        if(document.getElementById("samuelCheck")){
+        let isSamuelChecked = document.getElementById("samuelCheck")
+        if(isSamuelChecked.checked == true){
                 includedKids.push("samuel")
+                console.log(`${includedKids}`)
+        }
+        else if(isSamuelChecked.checked == false){
+                includedKids = includedKids.filter(e => e !== 'samuel')
+                console.log(`${includedKids}`)
         }
 }
 
