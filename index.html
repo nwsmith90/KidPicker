@@ -16,13 +16,39 @@
 
 		<h1>Choose a Child</h1>
 
-		<button id="choice">Pick Me!</button>
+		<div>
+			<!-- Rounded switch -->
+			<span>Logan</span>
+			<label class="switch">
+				<input type="checkbox" id="loganCheck" onclick="addLogan()">
+				<span class="slider round"></span>
+  			</label>
+			<span>Patrick</span>
+			  <label class="switch">
+				<input type="checkbox" id="patrickCheck" onclick="addPatrick()">
+				<span class="slider round"></span>
+  			</label>
+			<span>Lillian</span>
+			  <label class="switch">
+				<input type="checkbox" id="lillianCheck" onclick="addLillian()">
+				<span class="slider round"></span>
+  			</label>
+			<span>Samuel</span>
+			  <label class="switch">
+				<input type="checkbox" id="samuelCheck" onclick="addSamuel()">
+				<span class="slider round"></span>
+  			</label>
+		</div>
 
 		<div>
 			<img id="patrick" class="children" src="assets\Patrick.jpg"  hidden>
 			<img id="lillian" class="children" src="assets\Lillian.jpg" hidden>
 			<img id="logan" class="children" src="assets\Logan.jpg" hidden>
 			<img id="samuel" class="children" src="assets\Samuel.jpg" hidden>
+		</div>
+
+		<div>
+			<button id="choice">Pick Me!</button>
 		</div>
 
 		<script type="text/javascript" src="js/main.js"></script>
