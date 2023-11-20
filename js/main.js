@@ -2,13 +2,15 @@
 let includedKids = []
 
 function addLogan() {
-        if(document.getElementById("loganCheck" == 1)){
+        let isLoganChecked = document.getElementById("loganCheck")
+        if(isLoganChecked.checked == true){
                 includedKids.push("logan")
+                console.log(`${includedKids}`)
         }
-        else if(document.getElementById("loganCheck")!= 1){
+        else if(isLoganChecked.checked == false){
                 const index = includedKids.indexOf("logan")
-                includedKids = includedKids.splice(index, 3)
-                console.log(index)
+                includedKids = includedKids.splice(index, 0)
+                console.log(`${includedKids}`)
         }
 }
 
@@ -62,5 +64,6 @@ document.getElementById("choice").addEventListener(
 //             document.getElementById("lillian").hidden = true;
 //     }
     console.log(`${includedKids}`)
+    
  }   
 )
