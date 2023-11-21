@@ -5,6 +5,7 @@ function addLogan() {
         let isLoganChecked = document.getElementById("loganCheck")
         if(isLoganChecked.checked == true){
                 includedKids.push("logan")
+        }
                 
         else if(isLoganChecked.checked == false){
                 includedKids = includedKids.filter(e => e !== 'logan')
