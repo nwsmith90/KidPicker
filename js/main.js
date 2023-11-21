@@ -55,32 +55,44 @@ console.log(`${includedKids}`)
 document.getElementById("choice").addEventListener(
  "click",
  () => {
-//     let randomNum = (Math.floor(Math.random()*4))
-//     if(randomNum == 0){
-//     document.getElementById("logan").hidden = false;
-//     document.getElementById("patrick").hidden = true;
-//     document.getElementById("lillian").hidden = true;
-//     document.getElementById("samuel").hidden = true;
-//     }
-//     else if( randomNum == 1){
-//         document.getElementById("patrick").hidden = false;
-//         document.getElementById("logan").hidden = true;
-//         document.getElementById("lillian").hidden = true;
-//         document.getElementById("samuel").hidden = true;
-//         }
-//     else if(randomNum == 2){
-//             document.getElementById("lillian").hidden = false;
-//             document.getElementById("logan").hidden = true;
-//             document.getElementById("patrick").hidden = true;
-//             document.getElementById("samuel").hidden = true;
-//             }
-//     else{
-//             document.getElementById("samuel").hidden = false;
-//             document.getElementById("logan").hidden = true;
-//             document.getElementById("patrick").hidden = true;
-//             document.getElementById("lillian").hidden = true;
-//     }
-    console.log(`${includedKids}`)
+    let randomNum = (Math.floor(Math.random()*includedKids.length))
+    if(includedKids.length < 2){
+        document.getElementById("logan").hidden = true;
+        document.getElementById("patrick").hidden = true;
+        document.getElementById("lillian").hidden = true;
+        document.getElementById("samuel").hidden = true;
+        document.getElementById("notEnough").hidden = false;
+    }
+
+    else if(includedKids[randomNum] == "logan"){
+    document.getElementById("logan").hidden = false;
+    document.getElementById("patrick").hidden = true;
+    document.getElementById("lillian").hidden = true;
+    document.getElementById("samuel").hidden = true;
+    document.getElementById("notEnough").hidden = true;
+    }
+    else if( includedKids[randomNum] == "patrick"){
+        document.getElementById("patrick").hidden = false;
+        document.getElementById("logan").hidden = true;
+        document.getElementById("lillian").hidden = true;
+        document.getElementById("samuel").hidden = true;
+        document.getElementById("notEnough").hidden = true;
+        }
+    else if(includedKids[randomNum] == "lillian"){
+            document.getElementById("lillian").hidden = false;
+            document.getElementById("logan").hidden = true;
+            document.getElementById("patrick").hidden = true;
+            document.getElementById("samuel").hidden = true;
+            document.getElementById("notEnough").hidden = true;
+            }
+    else{
+            document.getElementById("samuel").hidden = false;
+            document.getElementById("logan").hidden = true;
+            document.getElementById("patrick").hidden = true;
+            document.getElementById("lillian").hidden = true;
+            document.getElementById("notEnough").hidden = true;
+    }
+    console.log(`${randomNum}`)
     
  }   
 )
