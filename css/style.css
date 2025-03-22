@@ -23,6 +23,7 @@
 
 body {
      text-align: center;
+     background-image: url("assets\space.jpg");
 
 }
 
@@ -51,6 +52,7 @@ footer {
 .switch {
      position: relative;
      display: inline-block;
+ 
      width: 60px;
      height: 34px;
    }
@@ -61,6 +63,12 @@ footer {
      width: 0;
      height: 0;
    }
+
+   /* The label span for switches
+
+   .selector {
+    padding-right: 70px;
+   } */
    
    /* The slider */
    .slider {
