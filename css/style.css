@@ -22,7 +22,7 @@
 /*******************************************/
 
 body {
-     background-image: linear-gradient(cornflowerblue, purple);
+     background-image: linear-gradient(purple, blue);
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
